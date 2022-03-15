@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,27 +14,27 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/movieImage"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            tools:src="@tools:sample/avatars"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintDimensionRatio="16:9"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/movieTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/black_50_percent_opacity"
             android:gravity="start"
-            tools:text="Exemplo filme"
+            android:padding="@dimen/default_margin"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:padding="@dimen/default_margin"
-            android:background="@color/black_50_percent_opacity"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Exemplo filme" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
