@@ -1,7 +1,7 @@
 package com.br.natanfc.filmesflix.implementations
 
 import android.util.Log
-import com.br.natanfc.filmesflix.api.MovieRestApiTask
+import com.br.natanfc.filmesflix.framework.api.MovieRestApiTask
 import com.br.natanfc.filmesflix.data.MovieDataSource
 import com.br.natanfc.filmesflix.domain.Movie
 
